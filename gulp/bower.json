@@ -1,8 +1,0 @@
-{
-  "name": "reactBoilerplate",
-  "version": "0.0.0",
-  "dependencies": {
-    "components-font-awesome": "~4.3.0",
-    "uikit": "~2.16.2"
-  }
-}

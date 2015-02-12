@@ -17,18 +17,9 @@
 /* CUSTOM STYLES */
 /*///////////////////////////////////////////////////////////////////////////*/
 
-html,body {
-    font-family:$normalFont;
-    height:100%;
-}
-
-.jumbotron {
-    margin-top:20px;
-}
-
-footer {
-    border-top:1px solid $lightColor;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-top:20px;
+.title-emphazis {
+	padding-left: 6px;
+	border-left: 3px solid $actionColor;
+	font-size: 16px;
+	line-height: 16px;
 }

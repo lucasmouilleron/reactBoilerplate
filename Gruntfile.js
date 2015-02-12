@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         },
         options: {
           watch: true,
-          transform: ["reactify"],  
+          transform: ["reactify", "es6ify"],
         }
       },
       compile: {
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
           "<%=cfg.jsMinFile%>": ["<%=cfg.jsDevDir%>/main.jsx"],
         },
         options: {
-          transform: ["reactify"]
+          transform: ["reactify", "es6ify"]
         }
       }
     },
@@ -130,8 +130,8 @@ module.exports = function(grunt) {
   grunt.registerTask("default", "These help instructions",["availabletasks"]);
   grunt.registerTask("cleanup", "Clean project",["clean:default"]);
   grunt.registerTask("install", "Install the project",["shell:install", "shell:installAdditional","copyFiles:main"]);
-  grunt.registerTask("watch:scripts", "Watch and compile js files",["browserify:watch", "watch:fake"]);
-  grunt.registerTask("watch:styles", "Compile sass files",["watch:sass"]);
+  grunt.registerTask("watch:scripts", "Watch and compile js files",["compile:scripts", "browserify:watch", "watch:fake"]);
+  grunt.registerTask("watch:styles", "Compile sass files",["compile:styles", "watch:sass"]);
   grunt.registerTask("compile:scripts", "Compile js files",["browserify:compile"]);
   grunt.registerTask("compile:styles", "Watch and compile sass files",["compass:compile","autoprefixer"]);
   grunt.registerTask("build", "Build all (scripts + styles)",["install", "compile:styles","compile:scripts"]);
