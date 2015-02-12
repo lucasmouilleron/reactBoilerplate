@@ -24,3 +24,9 @@ Build
 -----
 - edit `config.json` if needed
 - `grunt build`
+
+TODO
+----
+- github service
+- datamanagment
+- cf sql react github trending
