@@ -1,0 +1,26 @@
+{
+  "host":"localhost",
+  "baseURL":"webBoilerplate",
+  "homeURL": "http://localhost/webBoilerplate",
+
+  "sassDir":"_dev/scss",
+  "iconsDir":"_dev/icons",
+  "jsDevDir": "_dev/js",
+  "jsMainFile": "_dev/js/main.js",
+  "imgSrcDir": "_dev/img",
+  "jsMainName": "main",
+  "jsMinFile": "assets/js/scripts.min.js",
+  "cssDir":"assets/css",
+  "imgDir": "assets/img",
+  "fontsDir": "assets/fonts",
+  "jsDir": "assets/js",
+  
+  "cleanFiles":["node_modules", ".sass-cache", "_dev/js/libs/vendor"],
+  "copyFiles":{},
+  
+  "installCommands":[
+    "echo 'yeah'",
+    "ls"
+  ]
+  
+}

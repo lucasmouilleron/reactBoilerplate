@@ -1,0 +1,34 @@
+/*///////////////////////////////////////////////////////////////////////////*/
+@import "compass/css3";
+@import "compass/reset";
+@include global-reset();
+
+/*///////////////////////////////////////////////////////////////////////////*/
+@import "CSS:../../node_modules/font-awesome/css/font-awesome";
+@import "CSS:../../bower_components/uikit/css/uikit.almost-flat.min";
+
+/*///////////////////////////////////////////////////////////////////////////*/
+@import "fonts";
+@import "base";
+@import "helpers";
+@import "print";
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/* CUSTOM STYLES */
+/*///////////////////////////////////////////////////////////////////////////*/
+
+html,body {
+    font-family:$normalFont;
+    height:100%;
+}
+
+.jumbotron {
+    margin-top:20px;
+}
+
+footer {
+    border-top:1px solid $lightColor;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+}
