@@ -18,9 +18,9 @@ Install requirements
 
 Install
 -------
-- `cd _build && npm install`
+- `npm install && grunt install`
 
 Build
 -----
-- modify ```_build/config.json``` if needed
-- ```cd _build && grunt build```
+- edit `config.json` if needed
+- `grunt build`

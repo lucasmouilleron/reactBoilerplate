@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         },
         options: {
           watch: true,
-          transform: ["reactify", "es6ify"],
+          transform: ["reactify"],
         }
       },
       compile: {
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
           "<%=cfg.jsMinFile%>": ["<%=cfg.jsDevDir%>/main.jsx"],
         },
         options: {
-          transform: ["reactify", "es6ify"]
+          transform: ["reactify"]
         }
       }
     },
